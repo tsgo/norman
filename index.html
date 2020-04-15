@@ -7,6 +7,24 @@
 
     <title>Norman Tech</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/icon.css">
@@ -24,7 +42,7 @@
           <div class='menu_boxs'>
             <a href="index.html" class='nav'>Home</a>
             <a href="product.html" class='nav'>Protectors</a>
-            <a href="index.html" class='nav'>About us</a>
+            <a href="#" class='nav' id='about'>About us</a>
             <a href="mailto:info@normantech.com.tw" class='nav'>Contact us</a>
           </div>
         </div>
@@ -67,8 +85,10 @@
         </div>
       </div>
     </div>
-
+    <a id="n_about"></a>
+    
     <!-- 敘述文字 -->
+    <a id="n_about2"></a>
     <div class='cent'>
       <div class='cent_bg'>
         <h3>PROVIDE SOME COOL</br>OPTIONS FOR YOU</h3>
@@ -94,7 +114,7 @@
         <!-- CE protectors -->
         <div class='p_boxs p_boxs_show'>
           <div class='p_box'>
-            <div class='p_img'><img src="img/Product01.png"></div>
+            <div class='p_img'><img src="img/Product01.png"></div> <!-- 產品尺寸：258x228 -->
             <a href='product_d.html' class='pc_box'>10-XY555</a>
           </div>
 
@@ -132,31 +152,92 @@
             <div class='p_img'><img src="img/Product02.png"></div>
             <a href='product_d.html' class='pc_box'>17-XY555</a>
           </div>
-
         </div>
 
         <!-- Non-CE protectors -->
         <div class='p_boxs'>
-          <div class='p_box'>2</div>
-          <div class='p_box'>2</div>
-          <div class='p_box'>2</div>
-          <div class='p_box'>2</div>
-          <div class='p_box'>2</div>
-          <div class='p_box'>2</div>
-          <div class='p_box'>2</div>
-          <div class='p_box'>2</div>
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product03.png"></div>
+            <a href='product_d.html' class='pc_box'>20-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product02.png"></div>
+            <a href='product_d.html' class='pc_box'>21-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product01.png"></div>
+            <a href='product_d.html' class='pc_box'>22-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product02.png"></div>
+            <a href='product_d.html' class='pc_box'>23-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product03.png"></div>
+            <a href='product_d.html' class='pc_box'>24-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product01.png"></div>
+            <a href='product_d.html' class='pc_box'>25-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product03.png"></div>
+            <a href='product_d.html' class='pc_box'>26-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product02.png"></div>
+            <a href='product_d.html' class='pc_box'>27-XY555</a>
+          </div>
         </div>
 
         <!-- Garment accessories -->
         <div class='p_boxs'>
-          <div class='p_box'>3</div>
-          <div class='p_box'>3</div>
-          <div class='p_box'>3</div>
-          <div class='p_box'>3</div>
-          <div class='p_box'>3</div>
-          <div class='p_box'>3</div>
-          <div class='p_box'>3</div>
-          <div class='p_box'>3</div>
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product02.png"></div>
+            <a href='product_d.html' class='pc_box'>30-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product03.png"></div>
+            <a href='product_d.html' class='pc_box'>31-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product01.png"></div>
+            <a href='product_d.html' class='pc_box'>32-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product02.png"></div>
+            <a href='product_d.html' class='pc_box'>33-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product03.png"></div>
+            <a href='product_d.html' class='pc_box'>34-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product03.png"></div>
+            <a href='product_d.html' class='pc_box'>35-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product02.png"></div>
+            <a href='product_d.html' class='pc_box'>36-XY555</a>
+          </div>
+
+          <div class='p_box'>
+            <div class='p_img'><img src="img/Product01.png"></div>
+            <a href='product_d.html' class='pc_box'>37-XY555</a>
+          </div>
         </div>
 
         <a href="product.html" class='p_btn'>View More</a>
@@ -193,7 +274,7 @@
             <div class='f_link_boxs'>
               <a href="index.html" class='f_nav'>Home</a>
               <a href="product.html" class='f_nav'>Protectors</a>
-              <a href="index.html" class='f_nav'>About us</a>
+              <a href="index.html" class='f_nav' id='f_about'>About us</a>
               <a href="mailto:info@normantech.com.tw" class='f_nav'>Contact us</a>
             </div>
           </div>
@@ -201,6 +282,10 @@
         </div>
       </div>
     </footer>
+
+    <div id='to_top'></div>
+
+
   </body>
 </html>
 
