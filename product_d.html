@@ -29,9 +29,12 @@
 
     <link rel="stylesheet" type="text/css" href="css/icon.css">
     <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" href="css/swiper.css">
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script src="js/swiper.min.js"></script>
+
 
 
   </head>
@@ -88,7 +91,17 @@ High-end engineering for greater safety.
           </div>
 
           <div class='detail_pic'>
-            這邊放產品照片，最多五張
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/pd01.png"></div>
+                <div class="swiper-slide"><img src="img/pd02.png"></div>
+                <div class="swiper-slide"><img src="img/pd03.png"></div>
+                <div class="swiper-slide"><img src="img/pd04.png"></div>
+                <div class="swiper-slide"><img src="img/pd05.png"></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -135,6 +148,24 @@ High-end engineering for greater safety.
 
     <div id='to_top'></div>
 
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 
   </body>
 </html>
