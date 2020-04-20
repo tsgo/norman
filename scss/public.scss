@@ -40,6 +40,10 @@ header {
 
   position: relative;
 
+  @include range-width(450px, 1150px) {
+    padding: 15px;
+  }
+
   @include range-width(0, 450px) {
     padding: 15px;
   }
@@ -59,7 +63,11 @@ header {
     position: relative;
     @include clearfix();
 
-    @include range-width(0, 1120px) {
+    @include range-width(768px, 1150px) {
+      min-height: 785px;
+    }
+
+    @include range-width(0, 768px) {
       max-width: none;
       min-height: 530px;
     }
@@ -73,6 +81,10 @@ header {
       width: 100%;
       @include clearfix();
       padding: 25px 0;
+
+      @include range-width(450px, 1150px) {
+        padding: 15px 0;
+      }
 
       @include range-width(0, 450px) {
         padding: 15px 0;
@@ -131,6 +143,10 @@ header {
       text-align: left;
       margin-top: 120px;
 
+      @include range-width(450px, 800px) {
+        width: 65%;
+      }
+
       @include range-width(0, 450px) {
         margin-top: 0;
         width: 100%;
@@ -143,6 +159,8 @@ header {
         margin: 0 0 10px 0;
         font-weight: 900;
 
+        
+
         @include range-width(0, 450px) {
           font-size: 2.4rem;
           margin: 0 0 15px 0;
@@ -154,13 +172,14 @@ header {
           width: 150px;
           height: 3px;
           background-color: $nor_red;
-          margin-left: 15px;
+          margin-left: 0;
           margin-top: 35px;
+          margin-bottom: 15px;
 
           @include range-width(0, 450px) {
             margin-left: 0;
             margin-top: 15px;
-
+            margin-bottom: 0;
           }
         }
       }
@@ -242,6 +261,14 @@ header {
   display: inline-block;
   width: 100%;
   position: relative;
+
+  @include range-width(800px, 1025px) {
+    padding: 15px;
+  }
+
+  @include range-width(450px, 800px) {
+    padding: 15px;
+  }
 
   @include range-width(0, 450px) {
     padding: 15px;
@@ -377,6 +404,11 @@ header {
         float: left;
         padding-right: 30px;
 
+        @include range-width(450px, 800px) {
+          width: 100%;
+          padding-right: 0;
+        }
+
         @include range-width(0, 450px) {
           width: 100%;
           padding-right: 0;
@@ -428,6 +460,10 @@ header {
         display: inline-block;
         width: 40%;
         float: left;
+
+        @include range-width(450px, 800px) {
+          width: 100%;
+        }
 
         @include range-width(0, 450px) {
           width: 100%;
@@ -626,12 +662,20 @@ header {
         float: left;
         margin-bottom: 50px;
 
+        @include range-width(450px, 800px) {
+          width: 100%;
+        }
+
         @include range-width(0, 450px) {
           width: 100%;
         }
 
         &:nth-child(2n+2) {
           margin-left: 20px;
+
+          @include range-width(450px, 800px) {
+            margin-left: 0;
+          }
 
           @include range-width(0, 450px) {
             margin-left: 0;
@@ -1178,6 +1222,10 @@ footer {
 .swiper-container {
   width: 100%;
   max-width: 460px;
+
+  @include range-width(450px, 800px) {
+    max-width: 100%;
+  }
 
   @include range-width(0, 450px) {
     max-width: 100%;

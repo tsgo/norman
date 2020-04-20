@@ -4,14 +4,17 @@
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #35363a; font-size: 12px; text-align: center; font-family: 'Roboto', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 header { display: inline-block; width: 100%; margin: 0; padding: 0; background: url(../img/banner.png) center center no-repeat; -moz-background-size: cover; background-size: cover; position: relative; }
+@media screen and (max-width: 1149px) and (min-width: 450px) { header { padding: 15px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { header { padding: 15px; } }
 header.page_bg { background: url(../img/page_bg.png) center center no-repeat; -moz-background-size: cover; background-size: cover; }
 header .top_boxs { display: inline-block; width: 100%; max-width: 1100px; min-height: 785px; position: relative; *zoom: 1; }
 header .top_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
-@media screen and (max-width: 1119px) and (min-width: 0) { header .top_boxs { max-width: none; min-height: 530px; } }
+@media screen and (max-width: 1149px) and (min-width: 768px) { header .top_boxs { min-height: 785px; } }
+@media screen and (max-width: 767px) and (min-width: 0) { header .top_boxs { max-width: none; min-height: 530px; } }
 header .top_boxs.page_h { min-height: 200px; }
 header .top_boxs .tt_box { display: inline-block; width: 100%; *zoom: 1; padding: 25px 0; }
 header .top_boxs .tt_box:after { display: table; content: ""; line-height: 0; clear: both; }
+@media screen and (max-width: 1149px) and (min-width: 450px) { header .top_boxs .tt_box { padding: 15px 0; } }
 @media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tt_box { padding: 15px 0; } }
 header .top_boxs .tt_box .menu_boxs { display: inline-block; float: right; line-height: 52px; }
 @media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tt_box .menu_boxs { float: none; padding-top: 15px; } }
@@ -22,11 +25,12 @@ header .top_boxs .tt_box .logo_box { display: inline-block; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tt_box .logo_box { float: none; } }
 header .top_boxs .tt_box .logo_box img { display: inline-block; width: 100%; max-width: 167px; }
 header .top_boxs .tc_box { display: inline-block; width: 50%; float: left; text-align: left; margin-top: 120px; }
+@media screen and (max-width: 799px) and (min-width: 450px) { header .top_boxs .tc_box { width: 65%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tc_box { margin-top: 0; width: 100%; } }
 header .top_boxs .tc_box h1 { display: inline-block; font-size: 3.2rem; color: red; margin: 0 0 10px 0; font-weight: 900; }
 @media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tc_box h1 { font-size: 2.4rem; margin: 0 0 15px 0; } }
-header .top_boxs .tc_box h1:after { display: block; content: ''; width: 150px; height: 3px; background-color: red; margin-left: 15px; margin-top: 35px; }
-@media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tc_box h1:after { margin-left: 0; margin-top: 15px; } }
+header .top_boxs .tc_box h1:after { display: block; content: ''; width: 150px; height: 3px; background-color: red; margin-left: 0; margin-top: 35px; margin-bottom: 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tc_box h1:after { margin-left: 0; margin-top: 15px; margin-bottom: 0; } }
 header .top_boxs .tc_box h2 { display: inline-block; font-size: 2.4rem; color: white; margin: 0; font-weight: 500; }
 @media screen and (max-width: 449px) and (min-width: 0) { header .top_boxs .tc_box h2 { font-size: 1.8rem; } }
 header .top_boxs .tf_box { display: inline-block; position: absolute; bottom: 100px; left: 0; width: 100%; text-align: left; }
@@ -41,6 +45,8 @@ header .mount_w { display: inline-block; width: 100%; position: absolute; bottom
 header .mount_w img { display: inline-block; width: 100%; }
 
 .cent { display: inline-block; width: 100%; position: relative; }
+@media screen and (max-width: 1024px) and (min-width: 800px) { .cent { padding: 15px; } }
+@media screen and (max-width: 799px) and (min-width: 450px) { .cent { padding: 15px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent { padding: 15px; } }
 .cent.mobil_nop { padding: 0; }
 .cent.mb50 { margin-bottom: 110px; }
@@ -65,6 +71,7 @@ header .mount_w img { display: inline-block; width: 100%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .title_boxs .about_bg { width: 80%; } }
 .cent .cent_boxs .title_boxs .about_bg:after { display: inline-block; content: ''; width: 90%; height: 5px; background-color: red; }
 .cent .cent_boxs .title_boxs .detail_boxs { display: inline-block; width: 60%; float: left; padding-right: 30px; }
+@media screen and (max-width: 799px) and (min-width: 450px) { .cent .cent_boxs .title_boxs .detail_boxs { width: 100%; padding-right: 0; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .title_boxs .detail_boxs { width: 100%; padding-right: 0; } }
 .cent .cent_boxs .title_boxs .detail_boxs .detail_type { display: inline-block; width: 100%; font-size: 1.2rem; font-weight: 400; line-height: 1.8rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .title_boxs .detail_boxs .detail_type { font-size: 1rem; line-height: 1.4rem; } }
@@ -73,6 +80,7 @@ header .mount_w img { display: inline-block; width: 100%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .title_boxs .detail_boxs .detail_info .in_type { font-size: 1rem; } }
 .cent .cent_boxs .title_boxs .detail_boxs .detail_info .in_type:before { display: inline-block; content: attr(title); color: #ba0d0d; font-weight: 500; }
 .cent .cent_boxs .title_boxs .detail_pic { display: inline-block; width: 40%; float: left; }
+@media screen and (max-width: 799px) and (min-width: 450px) { .cent .cent_boxs .title_boxs .detail_pic { width: 100%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .title_boxs .detail_pic { width: 100%; } }
 .cent .cent_boxs .about_boxs { display: inline-block; width: 100%; margin-bottom: 50px; text-align: left; }
 .cent .cent_boxs .about_boxs .about_type { display: inline-block; width: 50%; float: left; font-size: 1.1rem; padding: 60px 30px 0 0; line-height: 24px; font-weight: 300; }
@@ -107,8 +115,10 @@ header .mount_w img { display: inline-block; width: 100%; }
 .cent .cent_boxs .p_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
 .cent .cent_boxs .p_boxs.p_boxs_show { display: inline-block; }
 .cent .cent_boxs .p_boxs .inner_p_box { display: inline-block; width: calc(50% - 20px / 2); float: left; margin-bottom: 50px; }
+@media screen and (max-width: 799px) and (min-width: 450px) { .cent .cent_boxs .p_boxs .inner_p_box { width: 100%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .p_boxs .inner_p_box { width: 100%; } }
 .cent .cent_boxs .p_boxs .inner_p_box:nth-child(2n+2) { margin-left: 20px; }
+@media screen and (max-width: 799px) and (min-width: 450px) { .cent .cent_boxs .p_boxs .inner_p_box:nth-child(2n+2) { margin-left: 0; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .p_boxs .inner_p_box:nth-child(2n+2) { margin-left: 0; } }
 .cent .cent_boxs .p_boxs .inner_p_box .inner_pic { display: inline-block; width: 100%; max-width: 165px; border: 2px solid #ebebeb; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent .cent_boxs .p_boxs .inner_p_box .inner_pic { width: 30%; } }
@@ -200,6 +210,7 @@ footer .footer_box .f_boxs .f_box .f_link_boxs .f_nav:hover, footer .footer_box 
 .p_btn:hover { background-color: red; }
 
 .swiper-container { width: 100%; max-width: 460px; background-color: rgba(255, 0, 0, 0.2); }
+@media screen and (max-width: 799px) and (min-width: 450px) { .swiper-container { max-width: 100%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .swiper-container { max-width: 100%; } }
 
 .swiper-slide { text-align: center; background: #fff; /* Center slide text vertically */ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
